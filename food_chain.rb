@@ -12,6 +12,30 @@ class FoodChain
   }
   ANIMALS = LINES.keys.freeze
 
+  class << self
+
+    def build_song
+      lines = []
+      1.upto(ANIMALS.size) do |i|
+        lines << construct_verse(ANIMALS.take(i).reverse)
+      end
+      lines.join
+    end
+
+    def construct_verse(array)
+      intro(array.first)
+    end
+
+    def intro(animal)
+      intro = "I know an old lady who swallowed a #{animal}.\n"
+      intro +=  "#{LINES[animal]}\n"
+      intro
+    end
+
+
+  end
 
 end
+
+puts FoodChain.build_song
 
