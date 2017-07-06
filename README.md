@@ -71,22 +71,16 @@ gem install minitest
 
 If you would like color output, you can `require 'minitest/pride'` in the test file, or note the alternative instruction, below, for running the test file.
 
-In order to run the test, you can run the test file from the exercise directory. For example, if the test suite is called `hello_world_test.rb`, you can run the following command:
+In order to run the test, you can run the test file from the exercise directory. For example, if the test suite is called `food_chain_test.rb`, you can run the following command:
 
 ```
-ruby hello_world_test.rb
+ruby food_chain_test.rb
 ```
 
 To include color from the command line:
 
 ```
-ruby -r minitest/pride hello_world_test.rb
-```
-
-The test files may have the execution bit set so you may also be able to run it like this:
-
-```
-./hello_world_test.rb
+ruby -r minitest/pride food_chain_test.rb
 ```
 
 
